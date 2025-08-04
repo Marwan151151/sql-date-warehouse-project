@@ -55,35 +55,36 @@ CREATE TABLE silver.crm_sales_details (
     dwh_create_date DATETIME DEFAULT GETDATE()
 );
 
--- Drop and Create silver.erp_CUST_AZ12
-IF OBJECT_ID('silver.erp_CUST_AZ12', 'U') IS NOT NULL
-    DROP TABLE silver.erp_CUST_AZ12;
+-- Drop and Create silver.erp_cust_az12
+IF OBJECT_ID('silver.erp_cust_az12', 'U') IS NOT NULL
+    DROP TABLE silver.erp_cust_az12;
 
-CREATE TABLE silver.erp_CUST_AZ12 (
+CREATE TABLE silver.erp_cust_az12 (
     CID             NVARCHAR(50),
     BDATE           DATE,
     GEN             NVARCHAR(50),
     dwh_create_date DATETIME DEFAULT GETDATE()
 );
 
--- Drop and Create silver.erp_LOC_A101
-IF OBJECT_ID('silver.erp_LOC_A101', 'U') IS NOT NULL
-    DROP TABLE silver.erp_LOC_A101;
+-- Drop and Create silver.erp_loc_a101
+IF OBJECT_ID('silver.erp_loc_a101', 'U') IS NOT NULL
+    DROP TABLE silver.erp_loc_a101;
 
-CREATE TABLE silver.erp_LOC_A101 (
+CREATE TABLE silver.erp_loc_a101 (
     CID             NVARCHAR(50),
     CNTRY           NVARCHAR(50),
     dwh_create_date DATETIME DEFAULT GETDATE()
 );
 
--- Drop and Create silver.erp_PX_CAT_G1V2
-IF OBJECT_ID('silver.erp_PX_CAT_G1V2', 'U') IS NOT NULL
-    DROP TABLE silver.erp_PX_CAT_G1V2;
+-- Drop and Create silver.erp_px_cat_g1v2
+IF OBJECT_ID('silver.erp_px_cat_g1v2', 'U') IS NOT NULL
+    DROP TABLE silver.erp_px_cat_g1v2;
 
-CREATE TABLE silver.erp_PX_CAT_G1V2 (
+CREATE TABLE silver.erp_px_cat_g1v2 (
     ID             NVARCHAR(50),
     CAT            NVARCHAR(50),
     SUBCAT         NVARCHAR(50),
     MAINTENANCE    NVARCHAR(50),
     dwh_create_date DATETIME DEFAULT GETDATE()
 );
+
